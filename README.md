@@ -1,4 +1,4 @@
-# header-scroll
+# dom-stroy
 
 ## Project setup
 ```

@@ -10,19 +10,19 @@
     </div>
     <div class="container-cards" :class="{'cards-bottom': !hasMoreCards}">
       <section-cards
-        v-for="card in displayedCards"
-        :key="card.id"
-        :imageSrc="card.imageSrc"
-        :title="card.title"
-        :size="card.size"
-        :area="card.area"
-        :rooms="card.rooms"
-        :price="card.price"
+          v-for="card in displayedCards"
+          :key="card.id"
+          :imageSrc="card.imageSrc"
+          :title="card.title"
+          :size="card.size"
+          :area="card.area"
+          :rooms="card.rooms"
+          :price="card.price"
       />
     </div>
-  <button class="show-more-button" v-if="!isLoading && hasMoreCards" @click="showMoreCards()">Показать ещё</button>
-  <loader-circle v-if="isLoading" />
-</div>
+    <button class="show-more-button" v-if="!isLoading && hasMoreCards" @click="showMoreCards()">Показать ещё</button>
+    <loader-circle v-if="isLoading" />
+  </div>
 </template>
 
 <script>
